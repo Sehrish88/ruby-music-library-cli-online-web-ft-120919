@@ -19,6 +19,12 @@ class Genre
     @@all.clear 
   end 
   
+  def self.create 
+    self.new(name).tap do |song|
+      song.save 
+  end 
+  
+  
     
   
   
