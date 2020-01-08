@@ -1,10 +1,13 @@
 class Song 
   all = [] 
   attr_accessor :name, :artist 
-    def initialize 
+  
+  def initialize 
       @name = name
       @artist = artist 
-    end 
+      
+      @@all << self 
+  end 
     
     def self.all 
       @@all
@@ -13,4 +16,3 @@ class Song
   
 end 
 
-Song.new("Blank Space").name 
