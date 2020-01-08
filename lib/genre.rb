@@ -11,6 +11,10 @@ class Genre
     @@all 
   end 
   
+  def save 
+    @@all << self 
+  end 
+  
   
     
   
