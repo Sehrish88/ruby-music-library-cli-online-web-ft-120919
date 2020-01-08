@@ -1,5 +1,5 @@
 class Genre 
-  attr_accessor :name, :artist  
+  attr_accessor :name, :artist, :songs   
   @@all = []
   
   def initialize 
@@ -25,8 +25,12 @@ class Genre
       genre.save 
   end 
   
-  def artists 
-    self.
+  def artists
+    artists = @songs.collect do |song|
+      song.artist
+    end
+    artists.uniq
+  end
   
     
   
