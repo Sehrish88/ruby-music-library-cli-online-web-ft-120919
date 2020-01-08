@@ -19,6 +19,12 @@ class Artist
    def destroy_all 
      @@all.clear 
    end 
+   
+   def self.create 
+    self.new(name).tap do |artist|
+      artist.save 
+  end 
+  
   
   
 end 
