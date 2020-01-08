@@ -2,8 +2,10 @@ class Artist
   @@all = []
   
   attr_accessor :name 
-   def initialize
+  
+  def initialize
      @name = name
+     @@all << self
    end 
    
    def self.all
