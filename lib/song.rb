@@ -18,6 +18,9 @@ class Song
     @@all << self 
   end 
   
+  def destroy_all 
+    @@all.clear
+  end 
   
   
 end 
