@@ -23,7 +23,8 @@ class Song
   end 
   
   def self.create 
-    self.new(name).tap do 
+    self.new(name).tap do |song|
+      
   
 end 
 
